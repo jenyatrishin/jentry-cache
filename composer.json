@@ -1,0 +1,31 @@
+{
+    "name": "jentry/cache",
+    "type": "library",
+    "description": "Provides an extended PSR-16 implementation",
+    "keywords": ["caching", "psr16"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jenya Trishin",
+            "email": "jenya.trishin@gmail.com"
+        }
+    ],
+    "provide": {
+        "psr/simple-cache-implementation": "3.0"
+    },
+    "require": {
+        "psr/simple-cache": "^3.0"
+    },
+    "suggest": {
+        "jentry/redis-cache": "Allows to store cache to the Redis"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jentry\\Cache\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.26"
+    }
+}
